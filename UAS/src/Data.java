@@ -118,9 +118,9 @@ public class Data {
     
     // output cari data
     public void print(){
-        System.out.println("=========================================================");
-        System.out.println("                  DATA PROFIL KARYAWAN                   ");
-        System.out.println("---------------------------------------------------------");
+        System.out.println("=======================================================");
+        System.out.println("                 DATA PROFIL KARYAWAN                  ");
+        System.out.println("-------------------------------------------------------");
 
         System.out.println("Kode Karyawan           : " + idK);
         System.out.println("Nama Karyawan           : " + namaK);
@@ -131,13 +131,13 @@ public class Data {
         switch( statusK ){
             case 0 :
                 System.out.println("Status Menikah          : Belum Menikah");
-                System.out.println("---------------------------------------------------------");
+                System.out.println("-------------------------------------------------------");
                 break;
             
             case 1 :
                 System.out.println("Status Menikah          : Sudah Menikah");
                 System.out.println("Jumlah Anak             : " + banyakAnak);
-                System.out.println("---------------------------------------------------------");
+                System.out.println("-------------------------------------------------------");
         }
         System.out.println("Gaji Pokok              : Rp" + gapok);
         
@@ -145,14 +145,14 @@ public class Data {
         if(StatusTunjK){
             System.out.println("Tunjangan Suami/Istri   : Rp" + tunjK );
         }if(StatusTunjP){
-            System.out.println("Tunjangan Pegawai       : Rp" + tunjP);
+            System.out.println("Tunjangan pegawai       : Rp" + tunjP);
         }if(StatusTunjA){
-            System.out.println("Tunjangan Anak          : Rp" + tunjA); 
+            System.out.println("Tunjangan anak          : Rp" + tunjA); 
         }
         System.out.println("--------------------------------------------------------- +");
-        System.out.println("Gaji Kotor              : Rp" + gajiBruto);
+        System.out.println("Gaji kotor              : Rp" + gajiBruto);
         System.out.println("Potongan                : Rp" + potongan);
         System.out.println("--------------------------------------------------------- -");
-        System.out.println("Gaji Bersih             : Rp" + gajiAkhir);
+        System.out.println("Gaji bersih             : Rp" + gajiAkhir);
     }
 }
